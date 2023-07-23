@@ -4,7 +4,7 @@ require_once "koneksi.php";
 
 // Cek apakah pengguna sudah login, jika tidak, arahkan kembali ke halaman login
 if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit;
 }
 

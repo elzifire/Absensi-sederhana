@@ -1,4 +1,12 @@
 <?php
+session_start();
+require_once "koneksi.php";
+
+// Cek apakah pengguna sudah login, jika tidak, arahkan kembali ke halaman login
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit;
+}
 require_once "koneksi.php";
 
 if (isset($_POST['tambah'])) {

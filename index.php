@@ -53,17 +53,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
 
-                            <h3 class="mb-5">Sign in</h3>
+                            <h3 class="mb-5">Login</h3>
 
                             <form method="post" action="">
                                 <div class="form-outline mb-4">
-                                    <input type="text" name="username" class="form-control form-control-lg" required>
-                                    <label class="form-label" for="typeEmailX-2">Email</label>
-                                </div>
+                                    <input type="text" name="username" class="form-control form-control-lg" placeholder="username" required>
+                                    <!-- <label class="form-label" for="typeEmailX-2">username</label> -->
+                                </div> 
 
                                 <div class="form-outline mb-4">
-                                    <input type="password" name="password" class="form-control form-control-lg" required>
-                                    <label class="form-label" for="typePasswordX-2">Password</label>
+                                    <input type="password" name="password" class="form-control form-control-lg"  placeholder="password" required>
+                                    <!-- <label class="form-label" for="typePasswordX-2">Password</label> -->
                                 </div>
 
                                 <!-- Checkbox -->

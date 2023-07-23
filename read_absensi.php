@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+// Cek apakah pengguna sudah login, jika tidak, arahkan kembali ke halaman login
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit;
+}
 require_once "koneksi.php";
 
 // Fungsi untuk menghitung total data absensi
