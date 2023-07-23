@@ -1,3 +1,2 @@
 # Absensi-sederhana
-(SKEMA DB.png
-)
+![Skema Database](SKEMA DB.png)
